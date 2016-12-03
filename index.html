@@ -2,6 +2,7 @@
   <head>
     <title>BBC Clone#1337</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="normalize.css">
   </head>
     <body>
       <div class="container">
@@ -12,19 +13,19 @@
             </div> <!-- logo -->
             <div id="sign-in">
               <img src="http://static.bbci.co.uk/id/0.32.00/img/bbcid_orb_signin_dark.png" alt="" width="18" height:"18">
-              <span>Sign In</span>
+              <span>Sing In</span>
             </div> <!-- sing in -->
             <ul>
               <li>News</li>
-              <li>Sports</li>
+              <li>Sport</li>
               <li>Weather</li>
-              <li>Shop</li>
-              <li>Earth</li>
-              <li>Travel</li>
+              <li>iPlayer</li>
+              <li>TV</li>
+              <li>Radio</li>
               <li>More</li>
             </ul>
             <div id="search-box">
-              <input type="text" name="search" placeholder="Search.."/>
+              <input type="text" name="search" placeholder="Search"/>
             </div>
           </div> <!-- fixed width -->
         </div> <!-- top-bar -->
@@ -37,16 +38,16 @@
           <div class="fixed-width">
             <ul>
               <li>Home</li>
-              <li>Video</li>
+              <li id="active">UK</li>
               <li>World</li>
-              <li>US & Canada</li>
-              <li>UK</li>
               <li>Business</li>
+              <li>Politics</li>
               <li>Tech</li>
               <li>Science</li>
-              <li>Magazine</li>
-              <li>Entertainment & Arts</li>
               <li>Health</li>
+              <li>Education</li>
+              <li>Entertainment & Arts</li>
+              <li>Video & Audio</li>
               <li>More</li>
             </ul>
           </div>
@@ -54,12 +55,13 @@
         <div class="location-bar">
           <div class="fixed-width">
             <ul>
-              <li id="bold">UK</li>
+              <li id="active2">UK</li>
               <li>England</li>
               <li>N. Ireland</li>
               <li>Scotland</li>
+              <li>Alba</li>
               <li>Wales</li>
-              <li>Politics</li>
+              <li>Cymru</li>
             </ul>
           </div>
         </div> <!-- location-bar -->
@@ -84,7 +86,7 @@
           </div>
         </div> <!-- content-bar -->
         <div class="watch-listen">
-          <h2>Watch/Listen</h2>
+          <h2>Watch/Listen</h2><br>
           <img src="http://i.imgur.com/2S2UEFI.png"/>
         </div>
       </div> <!-- container -->

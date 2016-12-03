@@ -1,133 +1,181 @@
-body{
-  margin: 0;
-  font-family: Arial, Helvetica, freesans, sans-serif;
+* {
+  font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
 }
 
-/* aligns in the middle */
-.fixed-width{
-  width: 1100px;
-  margin: 0 auto;
+.fixed-width {
+  width: 1000px;
+  margin: auto;
 }
 
-#bold{
-  font-weight: bold;
-  font-size: 1.3em;
+#active {
+  font-size: 19px;
+  border-bottom: solid 4px white;
 }
 
-.top-bar{
+#active2 {
+  font-size: 20px;
+  border-bottom: solid 4px #BB1919;
+}
+
+#logo {
+  float: left;
+  border-right: solid 1px #b4b4b4;
+  padding: 8px 8px 4px 0;
+}
+
+#sign-in {
+  float: left;
+  padding: 10px 50px 8px 20px;
+  border-right: solid 1px #b4b4b4;
+}
+
+#sign-in:hover {
+  cursor: pointer;
+  border-bottom: 4px solid blue;
+  padding-bottom: 4px;
+}
+
+#sign-in span {
+  padding: 10px 10px 8px 10px;
+  font-size: 13px;
+  position: relative;
+  top: -2px;
+}
+
+.top-bar {
   background: white;
-  width: 100%;
   height: 40px;
   color: black;
 }
 
-.top-bar ul{
-  margin: 0;
-  padding: 0;
-}
-
-.top-bar ul li{
+.top-bar ul li {
   float: left;
-/*   display: inline; */
+  font-weight: bold;
+  font-size: 13px;
   list-style: none;
   border-right: 1px solid #b4b4b4;
-  padding: 10px 20px 11px 20px;
+  padding: 12px 15px
 }
 
-.news-bar{
+.top-bar ul li:hover {
+  cursor: pointer;
+  border-bottom: 4px solid blue;
+  padding-bottom: 10px;
+}
+
+#search-box {
+  float: left;
+  padding: 9px;
+}
+
+#search-box input {
+  background: url('http://static.bbci.co.uk/frameworks/barlesque/3.18.1/orb/4/img/orb-search-dark.png') center right no-repeat #dcdcdc;
+  border: none;
+  padding: 2px;
+}
+
+.news-bar {
   background: #BB1919;
-  width: 100%;
-  height: 60px;
+  height: 58px;
   color: white; 
 }
 
-.news-bar p{
-  margin: 0;
-  padding: 0;
+.news-bar p {
   font-size: 3em;
-  position: relative;
-  right: 3px;
+  padding: 2px 0;
+  clear: both;
 }
 
-.category-bar{
+.category-bar {
   background: #A91717;
-  width: 100%;
-  height: 30px;
+  height: 34px;
   color: white;
 }
 
-.category-bar ul{
-  margin: 0;
-  padding: 0;
+.category-bar ul {
   list-style: none;
   position: relative;
   right: 10px;
-  top: 5px;
+  top: 8px;
 }
 
-.category-bar ul li{
+.category-bar ul li {
   float: left;
   border-right: 1px solid #bb4545;
-  padding: 0 18px 0 7px;
+  padding: 0px 10px;
+  font-size: 14px;
 }
 
-.location-bar{
-  background: white;
-  width: 100%;
-  height: 40px;
+.category-bar ul li:hover {
+  border-bottom: solid 4px white;
+  cursor: pointer;
+  padding-bottom: 6px;
 }
 
-.location-bar ul{
-  margin: 0;
-  padding: 0;
+.location-bar {
+  height: 36px;
+}
+
+.location-bar ul {
   list-style: none;
-  position: relative;
-  top: 7px;
-  right: 20px;
 }
 
-.location-bar ul li{
+.location-bar ul li {
   float: left;
-  padding: 0 20px 0 20px;
+  padding: 2px 10px 0 10px;
+  margin-top: 5px;
   border-right: 1px solid #b4b4b4;
 }
 
-.content{
-/*   background: pink; */
-  width: 100%;
-  color: #000000;
+.location-bar ul li:hover {
+  border-bottom: solid 4px #BB1919;
+  cursor: pointer;
+  padding-bottom: 5px;
 }
 
-.content h1{
-  color: #686868;
+.content {
+  color: #444;
 }
 
-.content img{
+.content {
+  color: #222;
+}
+
+.content h1:hover {
+  color: #1167A8;
+  cursor: pointer;
+}
+
+.content img {
   float: right;
   position: relative;
-  right: 440px;
+  right: 350px;
 }
 
-.content p{
-  width: 225px;
+.content p {
+  width: 230px;
+  color: #5F5F5A;
 }
 
 .content a{
   text-decoration: none;
 }
 
+#content-links {
+  float: left;
+  width: 250px;
+  line-height: 1.5em;
+  margin-top: 20px;
+}
+
 .watch-listen{
   float: right;
   position: relative;
-  bottom: 535px;
-  right: 390px;
-  border-left: 1px solid #b4b4b4;
-  padding: 0 0 0 30px;
-}
-
-.watch-listen h2{
-  margin: 0 0 20px 0;
-  padding: 0;
+  bottom: 270px;
+  right: 270px;
+  padding: 25px 15px;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
 }
 
 .watch-listen img{
@@ -135,37 +183,5 @@ body{
   right: 10px;
 }
 
-#content-links{
-  width: 250px;
-  line-height: 1.8em;
-  margin-top: 35px;
-}
 
-#logo{
-  float: left;
-  padding: 8px 10px 4px 0;
-  border-right: 1px solid #b4b4b4;
-}
 
-#sign-in{
-  float: left;
-  font-weight: bold;
-  font-size: 1.0em;
-  padding: 10px 70px 7px 10px;
-  border-right: 1px solid #b4b4b4;
-}
-
-#search-box{
-  float: left;
-  margin: 7px 0 7px 10px;
-}
-
-#search-box input{
-  height: 15px;
-  padding: 5px 9px 5px 3px;
-  border-radius: 5px;
-  background-image: url('http://static.bbci.co.uk/frameworks/barlesque/3.18.1/orb/4/img/orb-search-dark.png');
-  background-repeat: no-repeat;
-  background-position: 149px 4px;
-/*   background-color: #b4b4b4; */
-}
